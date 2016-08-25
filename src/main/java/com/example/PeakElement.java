@@ -25,7 +25,7 @@ public class PeakElement {
 	}
 	
 	public static void main(String[] args){
-		int[] array = {1,2,-1,3,2,100};
+		int[] array = {1,2,-1,3,2,100,5};
 		System.out.println(new PeakElement().getPeakElement(array));
 	}
 
