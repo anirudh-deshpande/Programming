@@ -39,7 +39,6 @@ public class MergeTwoLinkedLists {
 		
 		Node temp = new Node(Integer.MIN_VALUE);
 		Node cur = temp;
-		Node head = cur;
 		
 		while(a != null && b != null){
 			if(a.data <= b.data){
@@ -55,7 +54,7 @@ public class MergeTwoLinkedLists {
 		
 		cur.next = a==null ? b : a;
 		
-		return head.next;
+		return temp.next;
 		
 	}
 	
