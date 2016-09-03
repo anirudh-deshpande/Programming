@@ -62,7 +62,7 @@ public class ReverseAList {
 		
 		list.display();
 		
-		list.rotate();
+		list.reverse();
 		
 		System.out.println();
 		
