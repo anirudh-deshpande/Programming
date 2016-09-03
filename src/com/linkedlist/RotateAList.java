@@ -35,6 +35,22 @@ public class RotateAList {
 		}
 	}
 	
+	private void reverse(){
+		Node prev = null;
+		Node cur = head;
+		Node next;
+		
+		while(cur != null){
+			next = cur.next;
+			cur.next = prev;
+			prev = cur;
+			cur = next;
+		}
+		
+		head = prev;
+		
+	}
+	
 	private void rotate(int k){
 		
 		int count = 0;
@@ -47,7 +63,12 @@ public class RotateAList {
 		}
 		
 		if(hare == null){
-			return;
+			if((k % 2) == 0)
+				return;
+			else{
+				this.reverse();
+				return;
+			}
 		}
 		
 		while(hare.next != null){
@@ -65,15 +86,15 @@ public class RotateAList {
 	public static void main(String[] args){
 		RotateAList list = new RotateAList();
 		
-		list.addFront(5);
-		list.addFront(4);
-		list.addFront(3);
+//		list.addFront(5);
+//		list.addFront(4);
+//		list.addFront(3);
 		list.addFront(2);
 		list.addFront(1);
 		
 		list.display();
 		
-		list.rotate(2);
+		list.rotate(3);
 		
 		System.out.println();
 		
