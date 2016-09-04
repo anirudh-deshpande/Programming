@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package com.dp;
 
 public class PaintFence {
 	
