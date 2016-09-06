@@ -63,6 +63,7 @@ public class SwapNodesInPairs {
 	public static void main(String[] args){
 		SwapNodesInPairs list = new SwapNodesInPairs();
 		
+		list.addFront(5);
 		list.addFront(4);
 		list.addFront(3);
 		list.addFront(2);
