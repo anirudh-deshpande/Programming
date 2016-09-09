@@ -67,6 +67,7 @@ public class MergeKLinkedLists {
 			cur.next = queue.poll();
 			cur = cur.next;
 			
+			//Beauty of references/ pointers
 			if(cur.next != null){
 				queue.add(cur.next);
 			}
