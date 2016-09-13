@@ -61,7 +61,7 @@ public class GroupAnagrams {
 			
 		}
 		
-		//Because the compiler does not know it is a list of Strings
+		// Because the compiler does not know it is a list of Strings
 		List<List<String>> ans = new ArrayList<>();
 		ans.addAll(map.values());
 		
