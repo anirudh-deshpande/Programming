@@ -4,6 +4,8 @@ import java.util.HashSet;
 
 public class LongestSubstringKChars {
 	
+	//Wrong answer
+	
 	private int longestSubstrKChars(String s, int k){
 		
 		HashSet<Character> set = new HashSet<>();
