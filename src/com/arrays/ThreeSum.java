@@ -13,7 +13,7 @@ public class ThreeSum {
 		List<List<Integer>> returnList = new ArrayList<List<Integer>>();
 		
 		
-		if(numbers.length <= 3){
+		if(numbers.length == 0){
 			return returnList;
 		}
 		
@@ -26,7 +26,7 @@ public class ThreeSum {
 			int end = numbers.length - 1;
 			
 			while(start < end){
-				if(numbers[i] + numbers[start] + numbers[end] == 2){
+				if(numbers[i] + numbers[start] + numbers[end] == 0){
 						
 					List<Integer> list = new ArrayList<>();
 					list.add(numbers[i]);
@@ -37,7 +37,7 @@ public class ThreeSum {
 					end--;
 					
 				}else{
-					if(numbers[i] + numbers[start] + numbers[end] < 2){
+					if(numbers[i] + numbers[start] + numbers[end] < 0){
 						start++;
 					}else{
 						end--;
@@ -51,10 +51,18 @@ public class ThreeSum {
 		
 		return returnList;
 		
+		//////////
+		 ///////// 
+		  ////////
+		   ///////
+		    ////// 
+		     /////
+		      ////
+			//...
 	}
 	
 	public static void main(String[] args){
-		int[] numbers = {1,0,-1,2,-2,3};
+		int[] numbers = {0,0,0};
 		
 		List<List<Integer>> returnList = new ThreeSum().threeSum(numbers);
 		System.out.println(returnList);

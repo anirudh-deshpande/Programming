@@ -59,7 +59,8 @@ public class MergeKLinkedLists {
 		Node cur = temp;
 		
 		for(Node node:lists){
-			queue.add(node);
+			if(node != null)
+				queue.add(node);
 		}
 		
 		while(!queue.isEmpty()){
