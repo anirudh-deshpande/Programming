@@ -27,7 +27,7 @@ public class RotateArray {
     	int[] nums = {1, 2, 3};
     	int k = 4;
     	new RotateArray().rotate(nums, k);
-    	
+    	 
     	System.out.println(Arrays.toString(nums));
     }
 
