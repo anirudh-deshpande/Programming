@@ -50,7 +50,7 @@ public class KMPSubstringSearch {
 	public static void main(String[] args){
 		
 		String text = "abcxabcdabcdabcy";
-		String pattern = "abcdabcyz";
+		String pattern = "abcdabcy";
 		
 		System.out.println(new KMPSubstringSearch().KMPhasSubString(text, pattern));
 		

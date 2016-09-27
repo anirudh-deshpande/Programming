@@ -48,7 +48,7 @@ public class LongestSubstringKChars {
 	public static void main(String[] args){
 		String s = "ababa3baba";
 		
-		System.out.println(new LongestSubstringKChars().lengthOfLongestSubstringKDistinct(s, 2));
+		System.out.println(new LongestSubstringKChars().longestSubstrKChars(s, 2));
 		
 	}
 

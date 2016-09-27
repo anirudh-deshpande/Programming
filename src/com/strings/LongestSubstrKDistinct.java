@@ -23,8 +23,7 @@ public class LongestSubstrKDistinct {
 	                
 	                if (map.get(leftChar) == 0) { 
 	                    map.remove(leftChar);
-	                }
-	                
+	                } 
 	            }
 	            left++;
 	        }
