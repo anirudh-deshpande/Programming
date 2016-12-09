@@ -94,7 +94,7 @@ public class SubstrKRepeatedChars {
 	}
 	
 	public static void main(String[] args){
-		String s = "ababbc";
+		String s = "abavbdbc";
 		int num = new SubstrKRepeatedChars().longestSubStringAnotner(s, 2);
 		System.out.println(num);
 		

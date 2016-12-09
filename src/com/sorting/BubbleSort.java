@@ -16,12 +16,15 @@ public class BubbleSort {
 					numbers[j + 1] = temp;
 				}
 			}
+			
+			System.out.println(numbers[ n-i-1]);
+			System.out.println();
 		}
 		
 	}
 	
 	public static void main(String[] args){
-		int[] numbers = {101, 91, 81, 79, 181, 234, 321, 2, 1};
+		int[] numbers = {3, 4, 3, 1, 2, 5, 6, 7, 2, 3, 4, 1};
 		new BubbleSort().bubbleSort(numbers);
 		System.out.println(Arrays.toString(numbers));
 		
