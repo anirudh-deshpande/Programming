@@ -40,5 +40,62 @@ public class TwoSum {
 		ts.isSumTarget(nums, target);
 		
 	}
+	/*
+	array = {5, 1, 2, 4, 3}
+		target = 7
+
+		find 2 elements in the array which equals to target
+
+
+		var 1, var 2 .. 
+
+
+		Approach 1:
+		for(int i = 0; i < n; i++) {
+		  for(int j = 0; j < n; j++) {
+		    if(array[j] == array[i]) {
+		      continue;
+		    }
+		    if(array[i] + array[j] == target) {
+		      System.out.println(var1 + ", " + var2);
+		    }
+		  }
+		}
+
+		Time: O(n^2)
+		Space O(1)
+
+
+		Approach 2:
+
+		3 + 4  = 7
+		4 = 7 - 3
+
+		Map<Integer, Integer> map = new HashMap<>();
+		for(int i = 0; i < n; i++) {
+		  if(map.containsKey(array[i])) {
+		    System.out.println(array[i] + ", " + map.get(array[i])); // 2,5
+									      //3,4
+		  }else{
+		    map.put(target - array[i], array[i]);
+		  }
+		}
+
+
+		trace:
+		array = {5, 1, 2, 4, 3}
+		target = 7
+		map = { 
+			2:5,
+			6:1,        
+			3:4        
+		      }
+
+
+		      Map is a <key - value> pair
+
+		Time: O(n) 
+		Space: O(n)
+	*/
 
 }
