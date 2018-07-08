@@ -1,6 +1,4 @@
-package com.trees;
-
-import java.util.List;
+package src.com.trees;
 
 public class MaximumDepth {
 
